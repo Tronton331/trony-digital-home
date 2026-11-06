@@ -10,29 +10,29 @@ import { withUserConfig } from "../utils/config-overlay.ts";
  * 类型见 src/types/config.ts。
  */
 export const siteConfig: SiteConfig = withUserConfig("site", {
-	site: "https://shirone.mysqil.com/",
+	site: "https://trony.my.id/",
 	base: "/",
-	title: "Shirone",
-	subtitle: "A Material 3 anime blog",
+	title: "Trony's Digital Home",
+	subtitle: "Trony Digital Home",
 	// 电脑端顶栏标题与导航内容区域："left" 左对齐，"center" 居中。
 	topAppBar: {
 		contentAlign: "center",
 	},
-	// 显示设置面板控制：配置各项前端切换项的可见性（默认全部开启）。
+	// Website Display Settings (Navbar)
 	displaySettings: {
-		colorStyle: true, // 是否展示配色风格 9 宫格
-		colorSpec: true, // 是否展示 Color Spec 调色规范切换
-		wallpaperMode: true, // 是否展示页面背景（纯色/横幅）切换
-		layoutMode: true, // 是否展示文章列表布局（列表/网格）切换
-		reduceMotion: true, // 是否展示减少动效切换
-		texture: true, // 是否展示背景纹理选择
+		colorStyle: true,      // 9-style palette switcher
+		colorSpec: true,        // Color specification selector (2021/2025)
+		wallpaperMode: true,    // Background mode (banner/solid) toggle
+		layoutMode: true,       // Post list layout (list/grid) toggle
+		reduceMotion: true,     // Motion reduction toggle
+		texture: true,          // Ambient texture selector
 	},
 	lang: "en", // Language code, e.g. 'en', 'zh_CN', 'ja', etc.
 	// IANA time zone for precise post and moment timestamps. It is independent of lang.
-	timeZone: "Asia/Shanghai",
+	timeZone: "Asia/Jakarta",
 	themeColor: {
-		hue: 315, // Default hue 0-360. 站点设计默认粉紫（偏二次元）；262 紫 / 345 粉 也可选
-		fixed: false, // Hide the theme color picker for visitors
+		hue: 345, // Default hue 0-360. 站点设计默认粉紫（偏二次元）；262 紫 / 345 粉 也可选
+		fixed: true, // Hide the theme color picker for visitors
 		// Dynamic Material 3 palette style (TonalSpot/Vibrant/Content/Expressive/Rainbow/FruitSalad/Monochrome/Neutral/Fidelity)
 		style: "tonalSpot",
 		// Design spec version: "2021" (MD3) or "2025" (M3 Expressive)。角色集一致，
@@ -68,25 +68,22 @@ export const siteConfig: SiteConfig = withUserConfig("site", {
 			opacity: 0.24,
 		},
 		homeText: {
-			// 仅在首页 Banner 中显示，标题与副标题会上下居中排列。
+			// Main Banner Title
 			enable: true,
-			title: "Shirone",
+			title: "Trony's Website",
 			subtitle: [
-				"特別なことはないけど、君がいると十分です",
-				"今でもあなたは私の光",
-				"君ってさ、知らないうちに私の毎日になってたよ",
-				"君と話すと、なんか毎日がちょっと楽しくなるんだ",
-				"今日はなんでもない日。でも、ちょっとだけいい日",
+				"Can I to be something?",
+				"Let's be profesional, be kind, and be wise",
 			],
 			typewriter: {
 				// 副标题逐字显示；关闭后直接显示完整副标题。
 				enable: true,
-				// 打字速度（每个字符间隔，毫秒）。
-				speed: 100,
+				// Lowwer number means faster speed
+				speed: 30,
 				// 回退反向删除速度（每个字符间隔，毫秒）。
 				deleteSpeed: 50,
 				// 打字完成后停顿时间，单位为毫秒。
-				pauseTime: 2000,
+				pauseTime: 3000,
 				// 完成后是否循环播放；关闭表示只播放一次。
 				loop: true,
 			},
@@ -113,7 +110,7 @@ export const siteConfig: SiteConfig = withUserConfig("site", {
 	},
 	toc: {
 		enable: true, // Display the table of contents on the right side of the post
-		depth: 2, // Maximum heading depth to show in the table, from 1 to 3
+		depth: 3, // Maximum heading depth to show in the table, from 1 to 3
 	},
 	progressIndicator: {
 		// 进度条预设样式：dual 双向扫描（官方默认双线）/ single 单向扫描（单线）

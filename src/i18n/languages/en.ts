@@ -30,7 +30,7 @@ export const en: Translation = {
 
 	[Key.anime]: "Anime",
 	[Key.animeBanner]:
-		"My watchlist — watching, finished, and what's queued up next.",
+		"My anime collection — watching, completed, and planned. Ratings by me.",
 	[Key.animeNoResults]: "No anime matched your filter",
 	[Key.animeCounts]: "anime",
 	[Key.animeStatusWatching]: "Watching",

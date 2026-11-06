@@ -21,25 +21,15 @@ export const projectsData: ProjectItem[] = [
 		year: "2026",
 	},
 	{
-		key: "folkpatch",
-		title: "FolkPatch",
-		summary: "A kernel-level root solution for Android, built on APatch.",
-		category: "android",
-		phase: "building",
-		technologies: ["Kotlin", "APatch", "Android"],
-		icon: "material-symbols:terminal-rounded",
-		repository: "https://github.com/LyraVoid/FolkPatch",
-	},
-	{
-		key: "kernelpatch",
-		title: "KernelPatch",
+		key: "jellyfin",
+		title: "Jellyfin",
 		summary:
-			"A kernel patch framework that powers APatch-style root on Android by loading code into the running kernel.",
-		category: "android",
+			"A free software media system that puts you in control of managing and streaming your media.",
+		category: "Self-Hosted",
 		phase: "shipped",
-		technologies: ["C", "Linux Kernel", "Android"],
+		technologies: ["Linux"],
 		icon: "material-symbols:extension-outline-rounded",
-		repository: "https://github.com/lyravoid/KernelPatch",
+		repository: "https://github.com/jellyfin/jellyfin",
 	},
 ];
 
