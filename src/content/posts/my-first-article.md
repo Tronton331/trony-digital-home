@@ -1,5 +1,5 @@
 ---
-title: my-first-article
+title: My First Article
 published: 2026-11-05
 publishedAt: 2026-11-05T18:04:33+07:00
 description: 'My first personal blog post.'

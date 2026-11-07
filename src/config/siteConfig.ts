@@ -13,7 +13,7 @@ export const siteConfig: SiteConfig = withUserConfig("site", {
 	site: "https://trony.my.id/",
 	base: "/",
 	title: "Trony's Digital Home",
-	subtitle: "Trony Digital Home",
+	subtitle: "T331 Website",
 	// 电脑端顶栏标题与导航内容区域："left" 左对齐，"center" 居中。
 	topAppBar: {
 		contentAlign: "center",

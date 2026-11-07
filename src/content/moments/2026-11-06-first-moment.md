@@ -8,4 +8,6 @@ tags:
 
 Welcome to Moments!
 
+Hari ini adalah pertama kalinya saya deploy 
+
 I don't know what I want to write, but this is my first moment.
